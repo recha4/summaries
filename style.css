@@ -57,6 +57,17 @@ h2 {
   background-color: #ff751a;
 }
 
+/* Spezielle Farbe für Zurück-Button */
+.back-btn {
+  background-color: #888888;
+  /* grau, Beispiel */
+}
+
+.back-btn:hover {
+  background-color: #555555;
+  /* dunkleres Grau beim Hover */
+}
+
 /* Footer */
 footer {
   background-color: #e6e6e6;
