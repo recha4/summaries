@@ -82,3 +82,24 @@ header img {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+.link-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* untereinander */
+  align-items: left;
+  gap: 0.5rem;
+  /* Abstand zwischen den Links */
+}
+
+.link-container a {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.link-container a:hover {
+  color: #ff751a;
+}
