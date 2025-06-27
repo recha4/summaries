@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-  background-color: #4a90e2;
+  background-color: #ff944d;
   color: white;
   padding: 2rem 1rem;
 }
@@ -44,7 +44,7 @@ h2 {
 
 .btn {
   display: inline-block;
-  background-color: #4a90e2;
+  background-color: #ff944d;
   color: white;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -54,7 +54,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #357ABD;
+  background-color: #ff751a;
 }
 
 /* Footer */
