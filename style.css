@@ -89,12 +89,12 @@ header img {
   flex-direction: column;
   /* untereinander */
   align-items: left;
-  gap: 0.5rem;
+  gap: 1rem;
   /* Abstand zwischen den Links */
 }
 
 .link-container a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #000000;
   font-size: 1.1rem;
   transition: color 0.3s ease;
