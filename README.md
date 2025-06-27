@@ -8,7 +8,7 @@
 
 ## Website
 
-<a href="https://recha4.github.io/summaries/index.html">zur Website</a>
+<a href="https://recha4.github.io/summaries/">zur Website</a>
 
 ---
 
