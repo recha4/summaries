@@ -107,8 +107,9 @@ header img {
 /* für Mobiltelefone */
 @media (max-width: 600px) {
   .button-container {
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    /* Flex ausschalten */
+    text-align: center;
   }
 
   .btn {
