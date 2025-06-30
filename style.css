@@ -103,3 +103,21 @@ header img {
 .link-container a:hover {
   color: #ff751a;
 }
+
+/* für Mobiltelefone */
+@media (max-width: 600px) {
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+
+  .link-container {
+    width: 100%;
+  }
+
+  .link-container a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
