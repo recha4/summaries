@@ -15,6 +15,7 @@
 body {
   margin: 0;
   font-family: "Space Mono", monospace;
+  text-transform: lowercase;
   background-color: var(--bg);
   color: var(--text);
   text-align: center;
