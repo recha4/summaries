@@ -2,15 +2,15 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #000000;
+  background-color: black;
   color: #333;
   text-align: center;
 }
 
 /* Header */
 header {
-  background-color: #fb8638;
-  color: white;
+  background-color: #287233;
+  color: black;
   padding: 2rem 1rem;
 }
 
@@ -44,8 +44,8 @@ h2 {
 
 .btn {
   display: inline-block;
-  background-color: #fb8638;
-  color: white;
+  background-color: #904684;
+  color: #4e3b2b;
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 12px;
@@ -54,23 +54,21 @@ h2 {
 }
 
 .btn:hover {
-  background-color: rgb(184, 85, 19);
+  background-color: #5e2129;
 }
 
 /* Spezielle Farbe für Zurück-Button */
 .btn.back-btn {
-  background-color: #888888;
-  /* grau, Beispiel */
+  background-color: #287233;
 }
 
 .btn.back-btn:hover {
-  background-color: #555555;
-  /* dunkleres Grau beim Hover */
+  background-color: #1e5627;
 }
 
 /* Footer */
 footer {
-  background-color: #e6e6e6;
+  background-color: #287233;
   padding: 1rem;
   font-size: 0.9rem;
 }
@@ -101,7 +99,7 @@ header img {
 }
 
 .link-container a:hover {
-  color: rgb(184, 85, 19);
+  color: #904684;
 }
 
 /* für Mobiltelefone */
