@@ -143,26 +143,64 @@ footer {
   color: #999;
 }
 
-/* für Mobiltelefone */
+/* für Handys */
 @media (max-width: 600px) {
+  body {
+    text-align: left;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
   .button-container {
-    display: block;
-    /* Flex ausschalten */
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
   .btn {
+    width: auto;
     display: block;
-    width: 80%;
-    margin: 0.5rem auto;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  header img {
+    width: 100%;
+    max-width: 260px;
+    display: block;
+    margin: 1rem auto 0;
   }
 
   .link-container {
-    width: 100%;
+    align-items: stretch;
   }
 
   .link-container a {
-    display: block;
-    margin: 0.5rem 0;
+    padding: 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  footer {
+    text-align: center;
   }
 }
