@@ -1,27 +1,51 @@
 /* Grundlegendes Layout */
+:root {
+  --bg: #0d0d0d;
+  --card: #151515;
+  --text: #f2f2f2;
+
+  --green: #57dc84;
+  --blue: #34caff;
+  --purple: #e44ce7;
+  --orange: #fb8638;
+
+  --border: #2a2a2a;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: black;
-  color: #333;
+  font-family: "Space Mono", monospace;
+  background-color: var(--bg);
+  color: var(--text);
   text-align: center;
 }
 
 /* Header */
 header {
-  background-color: #287233;
-  color: black;
+  background-color: #111;
+  border-bottom: 2px solid var(--orange);
   padding: 2rem 1rem;
 }
 
 header h1 {
-  margin: 0;
+  color: var(--green);
   font-size: 3rem;
+  margin: 0;
+}
+
+header h1::after {
+  content: "_";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+  color: #bfbfbf;
 }
 
 /* Hauptbereich */
@@ -44,41 +68,53 @@ h2 {
 
 .btn {
   display: inline-block;
-  background-color: #904684;
-  color: #4e3b2b;
+  background-color: transparent;
+  color: var(--green);
+
   text-decoration: none;
+
   padding: 1rem 2rem;
+
+  border: 2px solid var(--green);
   border-radius: 12px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #5e2129;
+  background: var(--green);
+  color: black;
+
+  box-shadow:
+    0 0 10px var(--green),
+    0 0 20px var(--green);
 }
 
 /* Spezielle Farbe für Zurück-Button */
 .btn.back-btn {
-  background-color: #287233;
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 .btn.back-btn:hover {
-  background-color: #1e5627;
-}
+  background: var(--orange);
+  color: black;
 
-/* Footer */
-footer {
-  background-color: #287233;
-  padding: 1rem;
-  font-size: 0.9rem;
+  box-shadow:
+    0 0 10px var(--orange),
+    0 0 20px var(--orange);
 }
 
 header img {
   max-width: 300px;
-  height: auto;
   margin-top: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  border-radius: 12px;
+
+  border: 2px solid var(--blue);
+
+  box-shadow:
+    0 0 15px rgba(52, 202, 255, 0.4);
 }
 
 .link-container {
@@ -92,14 +128,18 @@ header img {
 }
 
 .link-container a {
+  color: var(--blue);
   text-decoration: none;
-  color: #000000;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
 .link-container a:hover {
-  color: #904684;
+  color: var(--purple);
+}
+
+footer {
+  background: #111;
+  border-top: 1px solid var(--border);
+  color: #999;
 }
 
 /* für Mobiltelefone */
